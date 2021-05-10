@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="419.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerLoginViewFormController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="952.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/car.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="98.0" layoutY="57.0" opacity="0.21" prefHeight="413.0" prefWidth="724.0" style="-fx-background-color: #ffffff;" text=" " />
+      <TextField editable="false" layoutX="145.0" layoutY="80.0" opacity="0.72" prefHeight="371.0" prefWidth="620.0" />
+      <JFXTextField fx:id="txtvNo" alignment="BASELINE_CENTER" focusColor="#eb3604" layoutX="316.0" layoutY="133.0" prefHeight="91.0" prefWidth="252.0">
+         <font>
+            <Font name="Times New Roman" size="48.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="381.0" layoutY="446.0" onAction="#btnLogin" prefHeight="41.0" prefWidth="121.0" ripplerFill="#eeeeee" style="-fx-background-color: #000000;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="281.0" layoutY="80.0" prefHeight="98.0" prefWidth="443.0" text="Vehicle Number" textFill="#070606">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="248.0" prefHeight="98.0" prefWidth="443.0" text="Password" textFill="#070606">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="38.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPswrd" alignment="BASELINE_CENTER" focusColor="#eb3604" layoutX="316.0" layoutY="301.0" prefHeight="91.0" prefWidth="252.0">
+         <font>
+            <Font name="Times New Roman" size="48.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton fx:id="btnExit" buttonType="RAISED" layoutY="14.0" onAction="#btnExit" prefHeight="47.0" prefWidth="61.0" ripplerFill="WHITE" text=" ">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/wbtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

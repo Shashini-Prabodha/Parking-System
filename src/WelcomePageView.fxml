@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="577.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WelcomePageViewController">
+   <children>
+      <ImageView fitHeight="587.0" fitWidth="958.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/DashBordView.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtDate" alignment="BASELINE_CENTER" focusColor="#02ffdd" layoutX="426.0" layoutY="467.0" prefHeight="82.0" prefWidth="396.0" promptText="yyyy-mm-dd">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="27.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnok" buttonType="RAISED" layoutX="592.0" layoutY="551.0" onAction="#btnok" ripplerFill="#f20000" text="OK">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

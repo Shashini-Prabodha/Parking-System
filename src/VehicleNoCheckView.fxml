@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="536.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VehicleNoCheckController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="971.0" opacity="0.93" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/car.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="80.0" layoutY="63.0" opacity="0.7" prefHeight="381.0" prefWidth="801.0" style="-fx-background-color: #1e272e;" />
+      <Label layoutX="214.0" layoutY="85.0" prefHeight="69.0" prefWidth="543.0" text="Enter Vehicle Number" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="54.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="242.0" layoutY="191.0" opacity="0.48" prefHeight="97.0" prefWidth="447.0" />
+      <JFXTextField fx:id="vNotxt" alignment="BASELINE_CENTER" focusColor="#41fff5" layoutX="317.0" layoutY="216.0" onAction="#vNotxt" prefHeight="63.0" prefWidth="293.0" unFocusColor="BLACK">
+         <font>
+            <Font name="Times New Roman Bold" size="34.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnShowDetails" buttonType="RAISED" layoutX="563.0" layoutY="458.0" onAction="#btnShowDetails" prefHeight="51.0" prefWidth="265.0" ripplerFill="WHITE" style="-fx-background-color: #000000;" text="Show Details" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="368.0" layoutY="346.0" onAction="#btnSearch" prefHeight="51.0" prefWidth="222.0" ripplerFill="WHITE" style="-fx-background-color: #000000;" text="Search &amp; Get Slot" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnVehicleAdd" buttonType="RAISED" layoutX="125.0" layoutY="458.0" onAction="#btnVehicleAdd" prefHeight="51.0" prefWidth="265.0" ripplerFill="WHITE" style="-fx-background-color: #000000;" text="Add New Vehicle" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnExit" buttonType="RAISED" layoutY="14.0" onAction="#btnExit" prefHeight="69.0" prefWidth="81.0" ripplerFill="WHITE" text=" ">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/wbtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

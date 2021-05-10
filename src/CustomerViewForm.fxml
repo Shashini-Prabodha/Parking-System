@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="669.0" prefWidth="1018.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerViewFormController">
+   <children>
+      <ImageView fitHeight="707.0" fitWidth="1049.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/DashBordView.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="39.0" layoutY="54.0" opacity="0.86" prefHeight="217.0" prefWidth="277.0" style="-fx-background-color: #1e272e;" />
+      <Label layoutX="360.0" layoutY="54.0" opacity="0.86" prefHeight="217.0" prefWidth="297.0" style="-fx-background-color: #1e272e;" />
+      <Label layoutX="706.0" layoutY="54.0" opacity="0.86" prefHeight="217.0" prefWidth="277.0" style="-fx-background-color: #1e272e;" />
+      <Label layoutX="39.0" layoutY="355.0" opacity="0.86" prefHeight="217.0" prefWidth="277.0" style="-fx-background-color: #1e272e;" />
+      <Label layoutX="366.0" layoutY="355.0" opacity="0.86" prefHeight="217.0" prefWidth="297.0" style="-fx-background-color: #1e272e;" />
+      <Label layoutX="706.0" layoutY="355.0" opacity="0.86" prefHeight="217.0" prefWidth="277.0" style="-fx-background-color: #1e272e;" />
+      <Label layoutX="109.0" layoutY="67.0" prefHeight="37.0" prefWidth="165.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="Basque Light" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="406.0" layoutY="67.0" prefHeight="48.0" prefWidth="207.0" text="Vehicle No" textFill="WHITE">
+         <font>
+            <Font name="Basque Light" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="794.0" layoutY="67.0" prefHeight="48.0" prefWidth="207.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="Basque Light" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="373.0" prefHeight="48.0" prefWidth="224.0" text="Arrival Time" textFill="WHITE">
+         <font>
+            <Font name="Basque Light" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="366.0" prefHeight="63.0" prefWidth="347.0" text="Departure Time" textFill="WHITE">
+         <font>
+            <Font name="Basque Light" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="748.0" layoutY="374.0" prefHeight="48.0" prefWidth="207.0" text="Total Cost" textFill="WHITE">
+         <font>
+            <Font name="Basque Light" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" alignment="BASELINE_CENTER" editable="false" layoutX="74.0" layoutY="155.0" prefHeight="48.0" prefWidth="207.0" style="-fx-background-color: #a4b0be;">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="vNo" alignment="BASELINE_CENTER" editable="false" layoutX="410.0" layoutY="155.0" prefHeight="48.0" prefWidth="207.0" style="-fx-background-color: #a4b0be;">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDate" alignment="BASELINE_CENTER" editable="false" layoutX="746.0" layoutY="155.0" prefHeight="48.0" prefWidth="207.0" style="-fx-background-color: #a4b0be;" text="Not set">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTot" alignment="BASELINE_CENTER" editable="false" layoutX="743.0" layoutY="464.0" prefHeight="48.0" prefWidth="207.0" style="-fx-background-color: #a4b0be;" text="Not set">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAtime" alignment="BASELINE_CENTER" editable="false" layoutX="75.0" layoutY="464.0" prefHeight="48.0" prefWidth="207.0" style="-fx-background-color: #a4b0be;" text="Not set">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDtime" alignment="BASELINE_CENTER" editable="false" layoutX="414.0" layoutY="464.0" prefHeight="48.0" prefWidth="207.0" style="-fx-background-color: #a4b0be;" text="Not set">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </TextField>
+      <Label layoutX="75.0" layoutY="593.0" opacity="0.51" prefHeight="80.0" prefWidth="790.0" style="-fx-background-color: #ff4757;" />
+      <JFXRadioButton fx:id="rbtnCash" layoutX="545.0" layoutY="619.0" onAction="#rbtn" text="cash" textFill="#073375">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rbtnCard" layoutX="718.0" layoutY="619.0" onAction="#rbtn" text="card" textFill="#073375">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXRadioButton>
+      <Label layoutX="123.0" layoutY="609.0" prefHeight="48.0" prefWidth="339.0" text="Select Payment Method" textFill="#d70000">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnOk" buttonType="RAISED" layoutX="893.0" layoutY="610.0" onAction="#btnOk" prefHeight="47.0" prefWidth="83.0" style="-fx-background-color: #000000;" text="OK" textFill="WHITE">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnExit" buttonType="RAISED" layoutY="-1.0" onAction="#btnExit" prefHeight="63.0" prefWidth="76.0" ripplerFill="#f80505" text=" ">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/bbtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

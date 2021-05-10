@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="555.0" prefWidth="913.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaymentViewFormController">
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="1028.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/abstract-background-red-dark-and-black-overlap-003-vector.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="35.0" layoutY="21.0" opacity="0.3" prefHeight="612.0" prefWidth="961.0" style="-fx-background-color: #a4b0be;" />
+      <Label layoutX="310.0" text="Payment Details" textFill="WHITE">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="74.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="139.0" text="Vehicle No" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="199.0" text="Customer Name" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="260.0" text="Arrival Time" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="325.0" text="Departure Time" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="386.0" text="Total Payment" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="448.0" text="Payment Method" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="319.0" layoutY="139.0" opacity="0.41" prefHeight="34.0" prefWidth="550.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Times New Roman Bold" size="21.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="319.0" layoutY="197.0" opacity="0.41" prefHeight="34.0" prefWidth="550.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Times New Roman Bold" size="21.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="319.0" layoutY="260.0" opacity="0.41" prefHeight="34.0" prefWidth="550.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Times New Roman Bold" size="21.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="319.0" layoutY="323.0" opacity="0.41" prefHeight="34.0" prefWidth="550.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Times New Roman Bold" size="21.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="319.0" layoutY="387.0" opacity="0.41" prefHeight="34.0" prefWidth="550.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Times New Roman Bold" size="21.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="319.0" layoutY="448.0" opacity="0.41" prefHeight="34.0" prefWidth="550.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="Times New Roman Bold" size="21.0" />
+         </font>
+      </TextField>
+      <JFXTextField fx:id="txtcname" alignment="BASELINE_CENTER" layoutX="345.0" layoutY="198.0" prefHeight="31.0" prefWidth="498.0">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtVno" alignment="BASELINE_CENTER" layoutX="340.0" layoutY="140.0" prefHeight="31.0" prefWidth="498.0" promptText="Enter Vehicle Name">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAtime" alignment="BASELINE_CENTER" layoutX="342.0" layoutY="258.0" prefHeight="31.0" prefWidth="498.0">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDtim" alignment="BASELINE_CENTER" layoutX="343.0" layoutY="324.0" prefHeight="31.0" prefWidth="498.0" promptText="Enter Depature Time (HH:MM)">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTotP" alignment="BASELINE_CENTER" layoutX="341.0" layoutY="386.0" prefHeight="31.0" prefWidth="498.0">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtpaymethod" alignment="BASELINE_CENTER" layoutX="343.0" layoutY="447.0" prefHeight="31.0" prefWidth="498.0">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnPC" buttonType="RAISED" layoutX="445.0" layoutY="521.0" onAction="#btnPC" prefHeight="61.0" prefWidth="221.0" ripplerFill="WHITE" style="-fx-background-color: #000000;" text="Confirm" textFill="#f2f2f2">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="878.0" layoutY="128.0" onAction="#btnSearch" prefHeight="61.0" prefWidth="113.0" ripplerFill="#ee9f31" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="878.0" layoutY="312.0" onAction="#btnAdd" prefHeight="61.0" prefWidth="113.0" ripplerFill="#ee9f31" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnExit" layoutX="35.0" layoutY="14.0" onAction="#btnExit" prefHeight="71.0" prefWidth="70.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/wbtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

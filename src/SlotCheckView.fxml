@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="651.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SlotCheckController">
+   <children>
+      <ImageView fitHeight="677.0" fitWidth="1015.0" opacity="0.87" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/westfield-london-01.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="23.0" layoutY="35.0" opacity="0.51" prefHeight="579.0" prefWidth="939.0" style="-fx-background-color: #1e272e;" text="Label" />
+      <Label layoutX="202.0" layoutY="21.0" prefHeight="138.0" prefWidth="688.0" text="Slot Checking Panel">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="80.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8446601941747572" startY="0.24271844660194175">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="0.007246376811594203" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="51.0" layoutY="149.0" opacity="0.61" prefHeight="199.0" prefWidth="428.0" style="-fx-background-color: #d2dae2;" />
+      <Label layoutX="495.0" layoutY="149.0" opacity="0.61" prefHeight="199.0" prefWidth="428.0" style="-fx-background-color: #d2dae2;" />
+      <Label layoutX="51.0" layoutY="376.0" opacity="0.61" prefHeight="199.0" prefWidth="428.0" style="-fx-background-color: #d2dae2;" />
+      <Label layoutX="495.0" layoutY="376.0" opacity="0.61" prefHeight="199.0" prefWidth="428.0" style="-fx-background-color: #d2dae2;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="511.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/van.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="138.0" fitWidth="131.0" layoutX="71.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/bus.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="511.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/truck.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnsrchVehical" buttonType="RAISED" layoutX="340.0" layoutY="596.0" onAction="#btnsrchVehical" prefHeight="55.0" prefWidth="305.0" ripplerFill="WHITE" style="-fx-background-color: #000000;" text="Search Vehical" textFill="WHITE">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="26.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="84.0" layoutY="306.0" text="MaX 40" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="526.0" layoutY="313.0" text="MaX 30" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="541.0" text="MaX 20" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="519.0" layoutY="541.0" text="MaX 10" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="180.0" fitWidth="235.0" layoutX="64.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/carin.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnRefresh" buttonType="RAISED" layoutX="923.0" layoutY="599.0" onAction="#btnRefresh" prefHeight="61.0" prefWidth="77.0" ripplerFill="WHITE" style="-fx-background-color: #000000;" text=" ">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/refresh.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnExit" layoutX="6.0" layoutY="6.0" onAction="#btnExit" prefHeight="61.0" prefWidth="77.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/wbtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtCar" alignment="BOTTOM_CENTER" layoutX="278.0" layoutY="178.0" prefHeight="76.0" prefWidth="159.0" text="40" unFocusColor="#a4a7bc">
+         <font>
+            <Font name="Times New Roman Bold" size="80.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtVan" alignment="BOTTOM_CENTER" layoutX="731.0" layoutY="176.0" prefHeight="76.0" prefWidth="159.0" text="30" unFocusColor="#a4a7bc">
+         <font>
+            <Font name="Times New Roman Bold" size="80.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtBus" alignment="BOTTOM_CENTER" layoutX="276.0" layoutY="401.0" prefHeight="76.0" prefWidth="159.0" text="20" unFocusColor="#a4a7bc">
+         <font>
+            <Font name="Times New Roman Bold" size="80.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLorry" alignment="BOTTOM_CENTER" layoutX="731.0" layoutY="403.0" prefHeight="76.0" prefWidth="159.0" text="10" unFocusColor="#a4a7bc">
+         <font>
+            <Font name="Times New Roman Bold" size="80.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

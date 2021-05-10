@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="542.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashBoardController">
+   <children>
+      <ImageView fitHeight="634.0" fitWidth="1068.0" layoutX="-14.0" layoutY="-27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/decd90671b475cb1c3bbd4d9d46210b3.jpg" />
+         </image>
+      </ImageView>
+      <Group layoutX="36.0" layoutY="127.0">
+         <children>
+            <JFXButton fx:id="btnCustomer" buttonType="RAISED" layoutX="15.0" layoutY="11.0" onAction="#btnCustomer" opacity="0.65" prefHeight="331.0" prefWidth="275.0" ripplerFill="#e1dede" style="-fx-background-color: #ff3838;" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <ImageView fitHeight="173.0" fitWidth="170.0" layoutX="59.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/cust.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="24.0" layoutY="24.0" text="Customer Protal" textFill="WHITE">
+               <font>
+                  <Font name="Victorian LET Plain:1.0" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group layoutX="364.0" layoutY="127.0">
+         <children>
+            <JFXButton fx:id="btnChecking" buttonType="RAISED" layoutX="15.0" layoutY="11.0" onAction="#btnChecking" opacity="0.78" prefHeight="331.0" prefWidth="275.0" ripplerFill="#e1dede" style="-fx-background-color: rgb(6, 82, 221);" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <Label layoutX="35.0" layoutY="24.0" text="Checking Protal" textFill="WHITE">
+               <font>
+                  <Font name="Victorian LET Plain:1.0" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="143.0" fitWidth="137.0" layoutX="71.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/checking.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="688.0" layoutY="127.0">
+         <children>
+            <JFXButton fx:id="btnCashier" buttonType="RAISED" layoutX="15.0" layoutY="11.0" onAction="#btnCashier" opacity="0.78" prefHeight="331.0" prefWidth="275.0" ripplerFill="#e1dede" style="-fx-background-color: rgb(179, 55, 113);" text=" ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <Label layoutX="48.0" layoutY="24.0" text="Cashier Protal" textFill="WHITE">
+               <font>
+                  <Font name="Victorian LET Plain:1.0" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="125.0" fitWidth="146.0" layoutX="90.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/casheir.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

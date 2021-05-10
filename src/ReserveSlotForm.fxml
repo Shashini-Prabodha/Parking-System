@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="512.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReserveSlotFormController">
+   <children>
+      <ImageView fitHeight="519.0" fitWidth="797.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/DashBordView.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="87.0" layoutY="70.0" opacity="0.53" prefHeight="415.0" prefWidth="644.0" style="-fx-background-color: #ffffff;" />
+      <JFXButton fx:id="btnGetSlot" buttonType="RAISED" layoutX="246.0" layoutY="393.0" onAction="#btnGetSlot" prefHeight="92.0" prefWidth="271.0" ripplerFill="#fcfcfc" style="-fx-background-color: #130f40;" text="Get Slot" textFill="WHITE">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="34.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField editable="false" layoutX="153.0" layoutY="88.0" opacity="0.2" prefHeight="185.0" prefWidth="525.0" style="-fx-background-color: #130f40;" />
+      <JFXTextField fx:id="txtAtime" alignment="BASELINE_CENTER" focusColor="#05ff86" layoutX="178.0" layoutY="155.0" prefHeight="51.0" prefWidth="463.0" promptText="Plese use 24 format for time (HH:mm)">
+         <font>
+            <Font name="Times New Roman" size="28.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="292.0" layoutY="233.0" prefHeight="21.0" prefWidth="248.0" text="Set Arrival Time" textFill="#e81919">
+         <font>
+            <Font name="Sitka Heading Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnExit" buttonType="RAISED" onAction="#btnExit" prefHeight="58.0" prefWidth="70.0" ripplerFill="RED" text=" ">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/bbtn.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+   </children>
+</AnchorPane>

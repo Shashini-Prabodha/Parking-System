@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="512.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddVehicleForm">
+   <children>
+      <ImageView fitHeight="618.0" fitWidth="977.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/creative-lowpoly-vector-background_1340-7215.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="56.0" layoutY="29.0" opacity="0.22" prefHeight="549.0" prefWidth="862.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="263.0" layoutY="41.0" prefHeight="73.0" prefWidth="417.0" text="Add New Vehicle">
+         <font>
+            <Font name="Times New Roman Bold" size="52.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#d65940" offset="0.43790849673202614" />
+                  <Stop color="#460480" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="131.0" fitWidth="143.0" layoutX="111.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/carin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="331.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/van.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="107.0" layoutX="548.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/bus.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="755.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/truck.png" />
+         </image>
+      </ImageView>
+      <JFXRadioButton fx:id="rbtnCar" layoutX="140.0" layoutY="216.0" onAction="#rbtn" text="car">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rbtnVan" layoutX="346.0" layoutY="218.0" onAction="#rbtn" text="van">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rbtnBus" layoutX="565.0" layoutY="216.0" onAction="#rbtn" text="bus">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rbtnLorry" layoutX="761.0" layoutY="217.0" onAction="#rbtn" text="lorry">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXRadioButton>
+      <Label layoutX="66.0" layoutY="335.0" text="Customer Name">
+         <font>
+            <Font name="Algerian" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="402.0" text="VEHICLE NO">
+         <font>
+            <Font name="Algerian" size="29.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtcname" focusColor="#ff1508" layoutX="360.0" layoutY="322.0" prefHeight="31.0" prefWidth="520.0">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtVno" focusColor="#ff1508" layoutX="360.0" layoutY="388.0" prefHeight="31.0" prefWidth="520.0">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="425.0" layoutY="493.0" onAction="#btnSave" prefHeight="55.0" prefWidth="99.0" ripplerFill="WHITE" style="-fx-background-color: #000000;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnExit" buttonType="RAISED" layoutY="-1.0" onAction="#btnExit" prefHeight="50.0" prefWidth="71.0" ripplerFill="BLACK" text=" ">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/bbtn.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+   </children>
+</AnchorPane>

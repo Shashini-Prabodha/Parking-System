@@ -1,0 +1,109 @@
+DROP DATABASE IF EXISTS parkingManagementSystem;
+CREATE DATABASE IF NOT EXISTS parkingManagementSystem;
+USE parkingManagementSystem;
+
+CREATE TABLE vehicle(
+
+	vNo VARCHAR(10) NOT NULL,
+	vType VARCHAR(5) NOT NULL,
+	ownerName VARCHAR(60) NOT NULL,
+	CONSTRAINT PRIMARY KEY(vNo)
+);
+
+CREATE TABLE vehicleType(
+	type VARCHAR(5) NOT NULL,
+	slot INT(2) NOT NULL,
+	costOfHour INT(3) NOT NULL,
+	CONSTRAINT PRIMARY KEY(type)
+);
+
+CREATE TABLE parking(
+	type VARCHAR(5),
+	parkingID INT(1) NOT NULL,
+	CONSTRAINT PRIMARY KEY(parkingID),
+	CONSTRAINT FOREIGN KEY(type) REFERENCES vehicleType(type)
+	ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE parkingDetails(
+	vNo VARCHAR(10),
+	date VARCHAR(10) NOT NULL,
+	parkingID INT(1),
+	arrival VARCHAR(5) default '00.00',
+	departure VARCHAR(5) default '00.00',
+	status VARCHAR(10) NOT NULL default "EXIT",
+	CONSTRAINT PRIMARY KEY(vNo,date,arrival),
+	CONSTRAINT FOREIGN KEY(vNo) REFERENCES vehicle(vNo)
+	ON UPDATE CASCADE ON DELETE CASCADE,
+	CONSTRAINT FOREIGN KEY(parkingID) REFERENCES parking(parkingID)
+	ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE payment(
+	vNo VARCHAR(10),
+	payID INT  AUTO_INCREMENT,
+	total DECIMAL default 0.0,
+	payment_method VARCHAR(10) default 'unPaid',
+	CONSTRAINT PRIMARY KEY(payID),
+	CONSTRAINT FOREIGN KEY(vNo) REFERENCES vehicle(vNo)
+	ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+INSERT INTO vehicle (vNo, vType, ownerName) 
+	VALUES("VX-9089", "car", "amal shantha"),
+	("QX-1129", "van", "kamal perera"),
+	("WT-7676", "lorry", "upul nimalka"),
+	("VX-9139", "bus", "supun hasan"),
+	("PL-2453", "car", "dulan awantha");
+
+
+INSERT INTO vehicleType (type,slot,costOfHour) 
+	VALUES("car",40,50),
+	("van",30,75),
+	("bus",20,100),
+	("lorry",10,150);	
+
+INSERT INTO parking (type, parkingID) 
+	VALUES("car",1),
+	("van", 2),
+	("bus",3),
+	("lorry", 4);
+
+INSERT INTO parkingDetails (vNo, date, parkingID,arrival,departure,status) 
+	VALUES("VX-9089", "2020-07-15",1, "07.56","08.23","EXIT"),
+	("QX-1129","2020-07-15",2, "07.54", "08.46","EXIT"),
+	("WT-7676", "2020-07-15",4,"09.05", "09.50","IN"),
+	("VX-9139", "2020-07-16",3,"09.16", "10.20","EXIT"),
+	("PL-2453", "2020-07-16",1,"14.52", "16.01","EXIT");
+	
+
+
+INSERT INTO payment (vNo, total, payment_method) 
+	VALUES("VX-9089",22.5, "cash"),
+	("QX-1129",65.025 , "card"),
+	("WT-7676",112.5 , "cash"),
+	("VX-9139",106.7 , "cash"),
+	("PL-2453",57.05 , "card");
+
+SELECT * FROM vehicle;
+SELECT * FROM payment;
+SELECT * FROM vehicleType;
+SELECT * FROM parking;
+SELECT * FROM parkingDetails;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

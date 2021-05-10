@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="627.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShowDetailsForm">
+   <children>
+      <ImageView fitHeight="663.0" fitWidth="981.0" layoutX="-2.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/depositphotos_25035765-stock-photo-underground-parking.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="35.0" layoutY="26.0" opacity="0.58" prefHeight="612.0" prefWidth="916.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="267.0" text="Vehicle Details">
+         <font>
+            <Font name="Victorian LET Plain:1.0" size="75.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="125.0" opacity="0.65" prefHeight="134.0" prefWidth="865.0" style="-fx-background-color: #EAB543;" />
+      <Label layoutX="616.0" layoutY="150.0" text="Vehicle Number">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="150.0" text="Owner Name">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="79.0" layoutY="188.0" opacity="0.71" prefHeight="55.0" prefWidth="432.0" />
+      <TextField editable="false" layoutX="530.0" layoutY="188.0" opacity="0.71" prefHeight="55.0" prefWidth="387.0" />
+      <JFXTextField fx:id="txtowner" alignment="BASELINE_CENTER" layoutX="92.0" layoutY="194.0" prefHeight="44.0" prefWidth="407.0">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtvNo" layoutX="547.0" layoutY="194.0" prefHeight="44.0" prefWidth="361.0">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnExit" layoutX="3.0" layoutY="-1.0" onAction="#btnExit" prefHeight="61.0" prefWidth="88.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="62.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/bbtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnRefresh" buttonType="RAISED" layoutX="464.0" layoutY="575.0" onAction="#btnRefresh" prefHeight="55.0" prefWidth="71.0" ripplerFill="WHITE" style="-fx-background-color: #000000;" text=" ">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/refresh.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <TableView fx:id="vdetails" layoutX="63.0" layoutY="271.0" prefHeight="282.0" prefWidth="865.0">
+        <columns>
+          <TableColumn fx:id="vnumber" prefWidth="165.0" text="vNo" />
+          <TableColumn fx:id="date" prefWidth="152.0" text="date" />
+            <TableColumn fx:id="parking" prefWidth="157.0" text="parking ID" />
+            <TableColumn fx:id="arrival" prefWidth="139.0" text="Arrival" />
+            <TableColumn fx:id="dep" prefWidth="129.0" text="departure" />
+            <TableColumn fx:id="status" prefWidth="122.0" text="status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
